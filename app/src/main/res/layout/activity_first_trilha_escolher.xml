@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstTrilhaEscolher">
+
+    <ImageView
+        android:id="@+id/imageTrilha2"
+        android:layout_width="212dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/imageTrilha1"
+        app:layout_constraintTop_toBottomOf="@+id/imageTrilha1"
+        app:srcCompat="@drawable/imagem_video" />
+
+    <ImageView
+        android:id="@+id/imageTrilha3"
+        android:layout_width="212dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTrilha2"
+        app:srcCompat="@drawable/imagem_video" />
+
+    <TextView
+        android:id="@+id/textDescricao1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Passo a passo: como descartar vidro corretamente"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageTrilha1"
+        app:layout_constraintTop_toTopOf="@+id/imageTrilha1" />
+
+    <TextView
+        android:id="@+id/textDescricao2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Passo a passo: como descartar papelão corretamente"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageTrilha2"
+        app:layout_constraintTop_toTopOf="@+id/imageTrilha2" />
+
+    <TextView
+        android:id="@+id/textDescricao3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Passo a passo: como descartar embalagens plásticas corretamente"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageTrilha3"
+        app:layout_constraintTop_toTopOf="@+id/imageTrilha3" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTrilha3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="187dp"
+        android:text="Trilhas"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Vamos aprender a descartar ?"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageTrilha1"
+        android:layout_width="212dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/imagem_video" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
